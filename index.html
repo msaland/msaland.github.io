@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+<script src=""></script>
+</head>
+
+<body class="dark-mode">
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">×</a>
+        <a href="index.html">CV Page</a>
+        <a href="joke.html">Tell a Joke API</a>
+    </div>
+
+    <section id="main">
+        <div class="box">
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" onclick="toggleDark()"/>
+                    <div class="slider round"></div>
+                </label>
+                <em>&nbsp;&nbsp;Enable Dark Mode</em>
+            </div>
+        </div>
+        <div class="box">&nbsp;&nbsp;</div>
+        <div class="box">
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox2">
+                    <input type="checkbox" id="checkbox2" onclick="openSide()"/>
+                    <div class="slider round"></div>
+                </label>
+                <em>&nbsp;&nbsp;Open Sidebar</em>
+            </div>
+        </div>
+        <br>
+        <div class="header">
+            <h1>My CV</h1>
+        </div>
+
+    </section>
+</body>
+</html>
