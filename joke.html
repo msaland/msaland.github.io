@@ -2,18 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Page Title</title>
+    <title>Joke API</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
     <script src="js/joke.js"></script>
-<script src=""></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body class="dark-mode">
     <div id="mySidebar" class="sidebar">
+        <p id="projects">Projects</p>
         <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">×</a>
         <a href="index.html">CV Page</a>
         <a href="joke.html">Tell a Joke API</a>
+        <a href="meme.html">Meme API</a>
     </div>
 
     <section id="main">
@@ -40,11 +43,12 @@
         <div class="header">
             <h1>Tell A Joke API Implementation</h1>
         </div>
-        <button id="button" type='button'>Get Joke</button>
-        <p id="setup"></p>
-        <p id="punchline"></p>
-        <p id="error"></p>
-
+        <div class="center">
+            <button id="jokebutton" type='button' href="#setup">Get Joke</button>
+            <p id="setup" class="setupC"></p>
+            <p id="punchline" class="punchC"></p>
+            <p id="error"></p>
+        </div>
     </section>
 </body>
 </html>

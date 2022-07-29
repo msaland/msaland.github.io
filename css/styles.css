@@ -6,6 +6,7 @@ color: #272b2e;
 body {
 background-color: #272b2e;
 color: #d8d4d1;
+font-family: Cambria, Georgia, serif;
 }
 
 /*Sidebar*/
@@ -18,7 +19,7 @@ top: 0;
 left: 0;
 background-color: #003366;
 overflow-x: hidden;
-transition: 0.5s;
+transition: 1s;
 padding-top: 60px;
 }
 
@@ -26,6 +27,16 @@ padding-top: 60px;
 padding: 8px 8px 8px 26px;
 text-decoration: none;
 font-size: 25px;
+color: #d8d4d1;
+display: block;
+transition: 0.3s;
+}
+
+#projects {
+padding: 0px 0px 0px 26px;
+margin: 0px 0px 10px 0px;
+text-decoration: none;
+font-size: 35px;
 color: #d8d4d1;
 display: block;
 transition: 0.3s;
@@ -50,7 +61,7 @@ color: #888685;
 /*End Sidebar*/
 
 #main {
-transition: margin-left .5s;
+transition: margin-left 1s;
 padding: 16px;
 }
 
@@ -123,13 +134,107 @@ border-radius: 50%;
 .header {
 padding: 1vw;
 text-align: center;
-background-image: url("../img/laptop.png");
+background-image: url("../img/nature.jpg");
 background-size: cover;
-background-color: #cccccc;
-color: white;
+background-color: #5b5b5b;
+color: rgb(255, 255, 255);
 font-size: 4vw;
 background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+-webkit-text-stroke-width: 0.15vw;
+-webkit-text-stroke-color: black;
 }
+
+.center {
+margin: auto;
+text-align: center;
+padding: 20px;
+font-size: 30px;
+}
+
+#jokebutton{
+background-color: #e3ac17;
+border-radius: 2px;
+font-size: 30px;
+padding: 24px 32px;
+transition-duration: 0.4s;
+border: 2px solid #4d4d4d;
+}
+
+#jokebutton:hover {
+background-color: #ffffff;
+}
+
+.setupC {
+animation: setupText 2s;
+}
+
+@keyframes setupText {
+0% {
+    opacity: 0;
+} 100% {
+    opacity: 1;
+} 
+}
+
+.punchC {
+animation: punchText 4s;
+}
+
+@keyframes punchText {
+0% {
+    opacity: 0;
+} 25% {
+    opacity: 0;
+} 75% {
+    opacity: 0;
+} 100% {
+    opacity: 1;
+} 
+}
+
+/* Overlay */
+.overlay {
+height: 100%;
+width: 0;
+position: fixed; 
+z-index: 1;
+left: 0;
+top: 0;
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0, 0.9); 
+overflow-x: hidden; 
+transition: 0.5s; 
+}
+
+.overlay-content {
+position: relative;
+top: 25%; 
+width: 100%; 
+text-align: center; 
+margin-top: 30px; 
+}
+
+.overlay a {
+padding: 8px;
+text-decoration: none;
+font-size: 36px;
+color: #818181;
+display: block; 
+transition: 0.3s; 
+}
+
+.overlay a:hover, .overlay a:focus {
+color: #f1f1f1;
+}
+
+.overlay .closebtn {
+position: absolute;
+top: 20px;
+right: 45px;
+font-size: 60px;
+}
+
+/* Overlay End */
