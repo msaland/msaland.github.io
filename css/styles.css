@@ -238,3 +238,40 @@ font-size: 60px;
 }
 
 /* Overlay End */
+
+.side{
+width: 20%
+}
+
+.middle{
+text-align: justify;
+width: 60%
+}
+
+.title {
+font-size: 2vw;
+}
+
+.entry {
+font-size: 1.25vw;
+}
+
+::-webkit-scrollbar {
+width: 15px;
+}
+
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey; 
+border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: rgb(164, 164, 164); 
+border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: rgb(110, 110, 110); 
+}
